@@ -1,4 +1,5 @@
 import { Component } from 'react/cjs/react.production.min';
+import PropTypes from 'prop-types';
 import MarvelService from '../../services/MarvelService';
 import ErrorMessage from '../errorMessage/ErrorMessage';
 import Spinner from '../spinner/Spinner';
@@ -103,6 +104,9 @@ class CharList extends Component {
             </div>
         )
     }
+}
+CharList.propTypes = {
+    onCharSelected: PropTypes.func
 }
 
 export default CharList;
