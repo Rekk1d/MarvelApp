@@ -67,6 +67,7 @@ class CharList extends Component {
         this.itemRefs[id].classList.add('char__item_selected');
     }
 
+
     renderItem(arr) {
         const items = arr.map((item, i) => {
         let imgStyle = {'objectFit' : 'cover'};
