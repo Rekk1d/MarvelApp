@@ -41,9 +41,7 @@ const ComicsList = () => {
             return (
                 <li 
                 className="comics__item"
-                key={item.id}
-                    
-                >
+                key={item.id}>
                     <a href="#">
                         <img src={item.thumbnail} alt="ultimate war" className="comics__item-img"/>
                         <div className="comics__item-name">{item.title}</div>
